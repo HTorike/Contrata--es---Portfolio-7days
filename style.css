@@ -1,5 +1,8 @@
+/*Margem da página*/
+
 :root {
-    --text-color: #667085;
+    --texto-primario: #667085;
+    --texto-secundario: #101828;
     --main-color: #8E2424;
   }
   
@@ -14,6 +17,9 @@
     width: 100%;
     height: 100vh;
   }
+
+  /*Margem da página*/
+  /*Container cabecalho*/
   
   .cabecalho-container {
     display: flex;
@@ -23,7 +29,7 @@
   }
   
   .cabecalho-container-links a {
-    color: var(--text-color);
+    color: var(--texto-primario);
     text-decoration: none;
     margin-right: 2rem;
   }
@@ -35,7 +41,7 @@
     border-radius: 0.5rem;
     font-weight: 500;
     background: none;
-    color: var(--text-color);
+    color: var(--texto-primario);
     font-size: 0.9rem;
   }
   
@@ -44,28 +50,103 @@
     color: #FFF;
   }
   
-  /* Cabeçalho - Primeira seção */
+  /*Container cabecalho*/
+  /*Container primeira section*/
   
-  .about-us {
+  .conteudo-container {
     padding: 7rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem; /* poderia ser margin-bottom pra cada elemento, gap dá um espaçamento entre todos
-    os filhos de uma div com display flex*/
+    gap: 1rem; 
   }
   
-  .about-us span {
+  .conteudo-container span {
     color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
   }
   
-  .about-us h1 {
-    font-size: 2rem;
+  .conteudo-container h1 {
+    font-size: 48px;
+    font-weight: 600;
   }
   
-  .about-us p {
-    color: var(--text-color);
+  .conteudo-container p {
+    color: var(--texto-primario);
     max-width: 50%;
     text-align: center;
     line-height: 1.5rem;
+    width: 792px;
   }
+
+  /*Container primeira section*/
+  /*Container segunda section*/
+
+  .metricas-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding: 0px 80px 96px 80px;
+  }
+
+  .metricas-container div{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--main-color);
+    gap: 8px;
+  }
+
+  .metricas-container span {
+    font-size: 18px;
+    font-weight: 500px;
+    color: var(--texto-secundario);
+  }
+
+.metricas-container p {
+  font-size: 18px;
+  font-weight: 400px ;
+  color: var(--texto-primario);
+}
+
+/*Container segunda section*/
+
+.conteudo-container-vagas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 80px 64px 80px;
+  gap: 96px;
+}
+
+.vagas-texto-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vagas {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--main-color);
+  background-color: #8E2424 50%;
+}
+
+.talentos {
+  font-weight: 600;
+  font-size: 36px;
+  padding: 16px 224px 0px 224px;
+}
+
+.equipe {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 20px 224px 0px 224px;
+  color: var(--texto-primario);
+}
